@@ -1,0 +1,7 @@
+# Ensure text files use LF
+* text=auto
+
+# Binary files should not be altered
+*.png binary
+*.jpg binary
+*.exe binary
