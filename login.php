@@ -2,7 +2,7 @@
 require 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $secretKey = '6LdkyHMqAAAAAFelfAMbjqSwyKkpYG_1sq3gArIO'; // Replace with your reCAPTCHA secret key
+    $secretKey = 'your secret key'; // Replace with your reCAPTCHA secret key
     $captcha = $_POST['g-recaptcha-response'];
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha");
     $responseKeys = json_decode($response, true);
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" required><br><br>
-            <div class="g-recaptcha" data-sitekey="6LdkyHMqAAAAAFf5gKnu02HiXfu_tIwUnv5jc25q"></div><br>
+            <div class="g-recaptcha" data-sitekey="your site key here"></div><br>
             <button type="submit">Login</button>
         </form>
     </div>
