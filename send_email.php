@@ -56,7 +56,7 @@ function sendEmailWithAttachment($to, $subject, $msg, $attachmentPath) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'komalkalshetti989@gmail.com'; // Your Gmail address
-        $mail->Password = 'wausnmwcvlaszygl'; // Your app password
+        $mail->Password = 'your app password'; // Your app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
